@@ -29,6 +29,7 @@
     "not ie <= 11",
     "not op_mini all"
   ],
+  "homepage": "https://laysent.github.io/daily-dashboard",
   "devDependencies": {
     "gh-pages": "^2.0.1"
   }
