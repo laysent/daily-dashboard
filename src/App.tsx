@@ -11,6 +11,25 @@ function isMorning() {
   return (new Date()).getHours() <= 10;
 }
 
+function setIntervalWhenActive(fn: () => void, timespan: number) {
+  let previous = 0;
+  let id: number | null = null;
+  function callback(timestamp: number) {
+    if (timestamp - previous >= timespan) {
+      fn();
+      previous = timestamp;
+    }
+    id = window.requestAnimationFrame(callback);
+  }
+  id = window.requestAnimationFrame(callback);
+  fn();
+  return () => {
+    if (id === null) return;
+    window.cancelAnimationFrame(id);
+    id = null;
+  };
+}
+
 class App extends Component {
   state = {
     weather: {
@@ -26,6 +45,7 @@ class App extends Component {
     },
     buses: [],
   };
+  stop: (() => void) | null = null;
   async getWeather() {
     const details = await getWeatherDetails();
 
@@ -48,7 +68,7 @@ class App extends Component {
       },
     });
   }
-  async getBusDetails() {
+  getBusDetails = async () => {
     const type = isMorning() ? busType.toCompany : busType.fromCompany;
     const buses = await getBusDetails(type);
     this.setState({
@@ -58,7 +78,10 @@ class App extends Component {
   componentDidMount() {
     this.getWeather();
     this.getAir();
-    this.getBusDetails();
+    this.stop = setIntervalWhenActive(this.getBusDetails, 30 * 1000);
+  }
+  componentWillUnmount() {
+    if (this.stop !== null) this.stop();
   }
   render() {
     const buses = this.state.buses;
