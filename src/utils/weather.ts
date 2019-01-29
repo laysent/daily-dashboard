@@ -1,4 +1,4 @@
-import { icons } from '../Section';
+import { icons } from '../cards/Section';
 
 function mapWeatherIcon(weatherId: number) {
   if (weatherId >= 200 && weatherId <= 232) {
