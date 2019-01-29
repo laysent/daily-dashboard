@@ -52,6 +52,7 @@ section .left-bottom {
 }
 
 section button.icon-button {
+  cursor: pointer;
   background: none;
   border: none;
   padding: 0;
@@ -74,6 +75,16 @@ section .right-top {
   position: absolute;
   top: 5px;
   right: 5px;
+}
+
+.spinning {
+  animation: loadingCircle 1s infinite linear;
+}
+
+@keyframes loadingCircle {
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @media (max-width: 600px) {
