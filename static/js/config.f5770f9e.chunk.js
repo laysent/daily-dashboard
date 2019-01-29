@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{38:function(i,n,o){"use strict";o.r(n),n.default={video:{bilibili:[25742,26146,26281,26297,25681,25510,26284,25739,26274,26283,25730,26303,25615]}}}}]);
+//# sourceMappingURL=config.f5770f9e.chunk.js.map
