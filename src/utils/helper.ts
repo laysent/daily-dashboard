@@ -46,3 +46,5 @@ export function getTime() {
   if (hour < 22) return time.evening;
   return time.night;
 }
+
+export const iPhone = /iphone/i.test(navigator.userAgent);

@@ -5,6 +5,7 @@ import * as helper from '../utils/helper';
 import loading from '../img/loading.svg';
 import play from '../img/play.svg';
 import pause from '../img/pause.svg';
+import wallet from '../img/wallet.svg';
 
 const interval = 30 * 1000;
 
@@ -90,6 +91,9 @@ class Bus extends PureComponent {
             />
           </button>
         )}
+        {helper.iPhone && <a href="alipayqr://platformapi/startapp?saId=200011235" target="_blank" className="icon-button left-top">
+          <img src={wallet} alt="wallet" className="small-icon" />
+        </a>}
       </Card>
     );
   }

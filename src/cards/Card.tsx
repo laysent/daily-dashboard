@@ -46,7 +46,7 @@ class Card extends Component <{ color: string, icon: icons, title: string, subti
     return (
       <section style={{ backgroundColor: color }}>
         {!loading && (
-          <a href={link} target="_blank">
+          <a href={link} target="_blank" className="center">
             {icon && <img className="icon" alt="icon" src={mapping[icon]} />}
             <h1>{title}</h1>
             <h3>{subtitle}</h3>
