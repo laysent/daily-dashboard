@@ -4,20 +4,20 @@ self.__precacheManifest = [
     "url": "/daily-dashboard/static/media/bus.e574b9b3.svg"
   },
   {
-    "revision": "e2aa5ee724a82500b8d6",
-    "url": "/daily-dashboard/static/css/main.2c11555d.chunk.css"
+    "revision": "a5be1e1f76e45159c443",
+    "url": "/daily-dashboard/static/css/main.6cf24a6a.chunk.css"
   },
   {
-    "revision": "558cf9fab76b08259d32",
-    "url": "/daily-dashboard/static/js/config.558cf9fa.chunk.js"
+    "revision": "9435752ba8f0cd41d2f1",
+    "url": "/daily-dashboard/static/js/config.9435752b.chunk.js"
   },
   {
-    "revision": "943b6a189afe2f6d7fcf",
-    "url": "/daily-dashboard/static/js/2.943b6a18.chunk.js"
+    "revision": "a7ce6b8ffd65bbeab8c1",
+    "url": "/daily-dashboard/static/js/2.a7ce6b8f.chunk.js"
   },
   {
-    "revision": "5944195e66f2cda466b1",
-    "url": "/daily-dashboard/static/js/runtime~main.5944195e.js"
+    "revision": "691e9a60da50a9aefa77",
+    "url": "/daily-dashboard/static/js/runtime~main.691e9a60.js"
   },
   {
     "revision": "58ebab15e8ad7853362978624c89b722",
@@ -44,8 +44,8 @@ self.__precacheManifest = [
     "url": "/daily-dashboard/static/media/cloud.142dc879.svg"
   },
   {
-    "revision": "e2aa5ee724a82500b8d6",
-    "url": "/daily-dashboard/static/js/main.e2aa5ee7.chunk.js"
+    "revision": "a5be1e1f76e45159c443",
+    "url": "/daily-dashboard/static/js/main.a5be1e1f.chunk.js"
   },
   {
     "revision": "a13a87fb1c32648e5b045192f6ebd4ce",
@@ -62,6 +62,10 @@ self.__precacheManifest = [
   {
     "revision": "95cf549e25c47e320c2c46544084284f",
     "url": "/daily-dashboard/static/media/pause.95cf549e.svg"
+  },
+  {
+    "revision": "976a3ad546fe1ba5a4a800a6eb793dea",
+    "url": "/daily-dashboard/static/media/wallet.976a3ad5.svg"
   },
   {
     "revision": "934ffe5a9225f4bcda198e5b58f25530",
@@ -84,7 +88,7 @@ self.__precacheManifest = [
     "url": "/daily-dashboard/static/media/check.47e2c3ee.svg"
   },
   {
-    "revision": "25d5f727a7d2e3c0f272609cc536c055",
+    "revision": "1cbf937f0ebd0bbb1d629eea28de0b7e",
     "url": "/daily-dashboard/index.html"
   }
 ];
