@@ -3,6 +3,7 @@ import './App.css';
 import Bus from './cards/Bus';
 import Weather from './cards/Weather';
 import Video from './cards/Video';
+import Eating from './cards/Eating';
 import { time, getTime } from './utils/helper';
 
 class App extends PureComponent {
@@ -28,19 +29,19 @@ class App extends PureComponent {
     let children: Array<any> = [];
     switch (this.state.time) {
       case time.morning:
-        children = [Weather, Bus, Video];
+        children = [Weather, Bus, Video, Eating];
         break;
       case time.noon:
-        children = [Video, Weather, Bus];
+        children = [Eating, Video, Weather, Bus];
         break;
       case time.afternoon:
-        children = [Weather, Video, Bus];
+        children = [Weather, Video, Eating, Bus];
         break;
       case time.evening:
-        children = [Bus, Video, Weather];
+        children = [Eating, Bus, Video, Weather];
         break;
       case time.night:
-        children = [Video, Weather, Bus];
+        children = [Video, Weather, Bus, Eating];
         break;
     }
     return (

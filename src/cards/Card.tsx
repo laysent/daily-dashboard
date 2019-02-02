@@ -7,6 +7,7 @@ import clear from '../img/weather/clear.svg';
 import cloud from '../img/weather/cloud.svg';
 import bus from '../img/bus.svg';
 import video from '../img/bilibili.svg';
+import eating from '../img/eating.svg';
 
 export enum icons {
   thunderstorm,
@@ -18,6 +19,7 @@ export enum icons {
 
   bus,
   video,
+  eating,
 };
 
 const mapping = {
@@ -30,6 +32,7 @@ const mapping = {
 
   [icons.bus]: bus,
   [icons.video]: video,
+  [icons.eating]: eating,
 };
 
 class Card extends Component <{ color: string, icon: icons, title: string, subtitle: string, loading: boolean, link?: string }> {
