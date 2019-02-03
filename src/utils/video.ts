@@ -29,7 +29,7 @@ interface BilibiliTimelineResponse {
 }
 
 export interface VideoDetails {
-  date: Date;
+  date: number;
   episode: string;
   title: string;
   seasonId: number;
@@ -47,6 +47,9 @@ export async function getBilibiliDetails() {
   const { result } = await fetchBilibili();
   const index = result.findIndex(day => day.is_today === 1);
   const daysUntilToday = result.slice(0, index + 1);
+  const daysFromToday = result.slice(index);
+  const firstDayWithUnpublishedVideo =
+    daysFromToday.find(day => day.seasons.findIndex(season => season.is_published === 0) >= 0);
   const videos: Array<VideoDetails> = daysUntilToday
     .map((day) => day.seasons
       .filter(season => season.is_published === 1)
@@ -58,7 +61,7 @@ export async function getBilibiliDetails() {
           episodeNum = +matched[1];
         }
         return {
-          date: new Date(season.pub_ts * 1000),
+          date: season.pub_ts * 1000,
           episode,
           title: season.title,
           seasonId: season.season_id,
@@ -68,5 +71,13 @@ export async function getBilibiliDetails() {
       })
     )
     .reduce((acc, day) => acc.concat(day), []);
-  return videos;
+  let nextUpdateTime = 0;
+  if (firstDayWithUnpublishedVideo) {
+    const first = firstDayWithUnpublishedVideo.seasons.find(season => season.is_published === 0) as BilibiliVideo;
+    nextUpdateTime = first.pub_ts * 1000;
+  }
+  return {
+    videos,
+    nextUpdateTime,
+  };
 }

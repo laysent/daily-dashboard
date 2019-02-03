@@ -15,13 +15,20 @@ class Video extends PureComponent {
     watchList: [],
     index: 0,
   }
-  videos: Array<VideoDetails> | null = null;
   async getPendingWatchList() {
-    const [playlist, videos] = await Promise.all([
+    const cachedDetails: {
+      nextUpdateTime: number;
+      videos: Array<VideoDetails>;
+    } = JSON.parse(localStorage.getItem('bilibili-videos') || '{"nextUpdateTime":0,"videos":[]}');
+    const shouldUpdate = cachedDetails.nextUpdateTime < Date.now();
+    const [playlist, details] = await Promise.all([
       getWatchList(),
-      this.videos ? Promise.resolve(this.videos) : getBilibiliDetails(),
+      shouldUpdate ? getBilibiliDetails() : Promise.resolve(cachedDetails),
     ]);
-    this.videos = videos;
+    const { videos } = details;
+    if (shouldUpdate) {
+      localStorage.setItem('bilibili-videos', JSON.stringify(details));
+    }
     const watched = JSON.parse(localStorage.getItem('bilibili') || '{}');
     const unwatched = videos
     .filter((video) => {
@@ -34,8 +41,8 @@ class Video extends PureComponent {
       return lastWatchedEpisode < video.episodeNum;
     })
     .sort((videoA, videoB) => {
-      const isVideoAToday = helper.isToday(videoA.date);
-      const isVideoBToday = helper.isToday(videoB.date);
+      const isVideoAToday = helper.isToday(new Date(videoA.date));
+      const isVideoBToday = helper.isToday(new Date(videoB.date));
       if (isVideoAToday && !isVideoBToday) return -1;
       if (!isVideoAToday && isVideoBToday) return 1;
       const videoAIndex = playlist.bilibili.indexOf(videoA.seasonId);
