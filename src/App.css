@@ -25,6 +25,7 @@ main.app section {
   width: 50%;
   min-height: 50vh;
   flex: 1 0 360px;
+  overflow: hidden;
 }
 
 main.app section > a.center {
