@@ -1,8 +1,8 @@
 <p align="center">
-<img src="./dashboard.png" alt="Logo" style="max-width:100px">
+<img src="./dashboard.png" alt="Logo" width="150">
 </p>
 
-# Daily Dashboard
+<h2 align="center">Daily Dashboard</h2>
 
 This is a simple web app for combining together info that I care about when coming home or to work, including:
 
