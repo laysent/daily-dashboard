@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "e574b9b39387967ead80db76c5c811fa",
-    "url": "/daily-dashboard/static/media/bus.e574b9b3.svg"
+    "revision": "2a73fdc997a4dd26fb6b",
+    "url": "/daily-dashboard/static/js/config.2a73fdc9.chunk.js"
   },
   {
-    "revision": "a5be1e1f76e45159c443",
-    "url": "/daily-dashboard/static/css/main.6cf24a6a.chunk.css"
+    "revision": "415fca45175c4945365a",
+    "url": "/daily-dashboard/static/css/main.99929532.chunk.css"
   },
   {
-    "revision": "9435752ba8f0cd41d2f1",
-    "url": "/daily-dashboard/static/js/config.9435752b.chunk.js"
+    "revision": "415fca45175c4945365a",
+    "url": "/daily-dashboard/static/js/main.415fca45.chunk.js"
   },
   {
-    "revision": "a7ce6b8ffd65bbeab8c1",
-    "url": "/daily-dashboard/static/js/2.a7ce6b8f.chunk.js"
+    "revision": "257a383b44b83f1df03d",
+    "url": "/daily-dashboard/static/js/2.257a383b.chunk.js"
   },
   {
-    "revision": "691e9a60da50a9aefa77",
-    "url": "/daily-dashboard/static/js/runtime~main.691e9a60.js"
+    "revision": "5a47bad04b182bc57d07",
+    "url": "/daily-dashboard/static/js/runtime~main.5a47bad0.js"
   },
   {
     "revision": "58ebab15e8ad7853362978624c89b722",
@@ -44,12 +44,16 @@ self.__precacheManifest = [
     "url": "/daily-dashboard/static/media/cloud.142dc879.svg"
   },
   {
-    "revision": "a5be1e1f76e45159c443",
-    "url": "/daily-dashboard/static/js/main.a5be1e1f.chunk.js"
+    "revision": "e574b9b39387967ead80db76c5c811fa",
+    "url": "/daily-dashboard/static/media/bus.e574b9b3.svg"
   },
   {
     "revision": "a13a87fb1c32648e5b045192f6ebd4ce",
     "url": "/daily-dashboard/static/media/bilibili.a13a87fb.svg"
+  },
+  {
+    "revision": "f3642dc92ccb27cae92a8431f075b3ad",
+    "url": "/daily-dashboard/static/media/eating.f3642dc9.svg"
   },
   {
     "revision": "2d1490eb323166b897109c9f589cc575",
@@ -88,7 +92,7 @@ self.__precacheManifest = [
     "url": "/daily-dashboard/static/media/check.47e2c3ee.svg"
   },
   {
-    "revision": "1cbf937f0ebd0bbb1d629eea28de0b7e",
+    "revision": "097c0df5f62fd6c36022a651a3e2a36c",
     "url": "/daily-dashboard/index.html"
   }
 ];

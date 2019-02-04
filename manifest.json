@@ -1,5 +1,5 @@
 {
-  "short_name": "Daily Dashboard",
+  "short_name": "Dashboard",
   "name": "Daily Dashboard",
   "icons": [
     {
@@ -10,6 +10,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#6994e3",
+  "background_color": "#91b7ad"
 }
