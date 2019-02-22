@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import Sampler from 'random-sampler';
 import Card, { icons } from './Card';
 import * as helper from '../utils/helper';
 
@@ -11,6 +12,7 @@ class Eating extends PureComponent {
     loading: true,
     eating: [],
   };
+  sampler: Sampler = new Sampler();
   componentDidMount() {
     this.update();
   }
@@ -37,7 +39,7 @@ class Eating extends PureComponent {
         return true;
       });
       this.setState({
-        eating: helper.weightedSampling(filtered, 5),
+        eating: this.sampler.sample(filtered, 5, element => element.weight),
         loading: false,
       });
     });
