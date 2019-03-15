@@ -41,8 +41,8 @@ class Video extends PureComponent {
       return lastWatchedEpisode < video.episodeNum;
     })
     .sort((videoA, videoB) => {
-      const isVideoAToday = helper.isToday(new Date(videoA.date));
-      const isVideoBToday = helper.isToday(new Date(videoB.date));
+      const isVideoAToday = helper.isIn24Hours(new Date(videoA.date));
+      const isVideoBToday = helper.isIn24Hours(new Date(videoB.date));
       if (isVideoAToday && !isVideoBToday) return -1;
       if (!isVideoAToday && isVideoBToday) return 1;
       const videoAIndex = playlist.bilibili.indexOf(videoA.seasonId);

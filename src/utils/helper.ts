@@ -9,6 +9,11 @@ export function isToday(date: Date) {
     && date.getDate() === now.getDate();
 }
 
+export function isIn24Hours(date: Date) {
+  const now = new Date();
+  return (+now - +date) < 24 * 60 * 60 * 1000;
+}
+
 export function setIntervalWhenActive(fn: () => void, timespan: number) {
   let previous = 0;
   let id: number | null = null;
