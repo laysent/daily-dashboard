@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/daily-dashboard/static/js/config.bf78c51c.chunk.js"
   },
   {
-    "revision": "1469f8ac283a8550d5bd",
+    "revision": "a4c8212324de41ed5d6a",
     "url": "/daily-dashboard/static/css/main.00b030e3.chunk.css"
   },
   {
-    "revision": "1469f8ac283a8550d5bd",
-    "url": "/daily-dashboard/static/js/main.1469f8ac.chunk.js"
+    "revision": "a4c8212324de41ed5d6a",
+    "url": "/daily-dashboard/static/js/main.a4c82123.chunk.js"
   },
   {
     "revision": "aca12a704f0523b244dd",
@@ -92,7 +92,7 @@ self.__precacheManifest = [
     "url": "/daily-dashboard/static/media/check.47e2c3ee.svg"
   },
   {
-    "revision": "88a527c2efe629be5c72c7007770402c",
+    "revision": "d3e748bfe93dca146ba818b1e12fdae6",
     "url": "/daily-dashboard/index.html"
   }
 ];
