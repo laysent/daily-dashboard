@@ -2,8 +2,8 @@
   "config.js": "/daily-dashboard/static/js/config.bf78c51c.chunk.js",
   "config.js.map": "/daily-dashboard/static/js/config.bf78c51c.chunk.js.map",
   "main.css": "/daily-dashboard/static/css/main.00b030e3.chunk.css",
-  "main.js": "/daily-dashboard/static/js/main.a4c82123.chunk.js",
-  "main.js.map": "/daily-dashboard/static/js/main.a4c82123.chunk.js.map",
+  "main.js": "/daily-dashboard/static/js/main.44d3f2d4.chunk.js",
+  "main.js.map": "/daily-dashboard/static/js/main.44d3f2d4.chunk.js.map",
   "static/js/2.aca12a70.chunk.js": "/daily-dashboard/static/js/2.aca12a70.chunk.js",
   "static/js/2.aca12a70.chunk.js.map": "/daily-dashboard/static/js/2.aca12a70.chunk.js.map",
   "runtime~main.js": "/daily-dashboard/static/js/runtime~main.3dc8ef45.js",
@@ -28,6 +28,6 @@
   "static/media/check.svg": "/daily-dashboard/static/media/check.47e2c3ee.svg",
   "static/css/main.00b030e3.chunk.css.map": "/daily-dashboard/static/css/main.00b030e3.chunk.css.map",
   "index.html": "/daily-dashboard/index.html",
-  "precache-manifest.f1d01aa1a3b18f8699a365011336645f.js": "/daily-dashboard/precache-manifest.f1d01aa1a3b18f8699a365011336645f.js",
+  "precache-manifest.50b2626976b2389e825dbe670da6760e.js": "/daily-dashboard/precache-manifest.50b2626976b2389e825dbe670da6760e.js",
   "service-worker.js": "/daily-dashboard/service-worker.js"
 }
