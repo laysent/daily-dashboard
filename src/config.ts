@@ -18,26 +18,71 @@ interface food {
 }
 
 const config: {
-  video: {
-    bilibili: Array<number>;
-  };
+  videos: { id: number, name: string, source: 'bilibili' | 'youku' }[];
   eating: Array<food>;
 } = {
-  video: {
-    bilibili: [
-      26875, // CAROLE & TUESDAY
-      26146, // 多罗罗
-      26801, // 鬼灭之刃
-      25681, // JOJO的奇妙冒险 黄金之风
-      26870, // 川柳少女
-      26284, // 盾之勇者成名录
-      26767, // 我们无法一起学习
-      26802, // 皿三昧
-      25615, // 魔偶马戏团
-      26794, // 贤者之孙
-      26818, // 一个人的〇〇小日子
-    ],
-  },
+  videos: [
+    {
+      id: 26875,
+      source: 'bilibili',
+      name: 'CAROLE & TUESDAY',
+    },
+    {
+      id: 26146,
+      name: '多罗罗',
+      source: 'bilibili',
+    },
+    {
+      id: 26801,
+      name: '鬼灭之刃',
+      source: 'bilibili',
+    },
+    {
+      id: 25681,
+      name: 'JOJO的奇妙冒险 黄金之风',
+      source: 'bilibili',
+    },
+    {
+      id: 434128,
+      name: '一拳超人 2',
+      source: 'youku',
+    },
+    {
+      id: 26870,
+      name: '川柳少女',
+      source: 'bilibili',
+    },
+    {
+      id: 26284,
+      name: '盾之勇者成名录',
+      source: 'bilibili',
+    },
+    {
+      id: 26767,
+      name: '我们无法一起学习',
+      source: 'bilibili',
+    },
+    {
+      id: 26802,
+      name: '皿三昧',
+      source: 'bilibili',
+    },
+    {
+      id: 25615,
+      name: '魔偶马戏团',
+      source: 'bilibili',
+    },
+    {
+      id: 26794,
+      name: '贤者之孙',
+      source: 'bilibili',
+    },
+    {
+      id: 26818,
+      name: '一个人的〇〇小日子',
+      source: 'bilibili',
+    },
+  ],
   eating: [
     {
       name: '牛丼',

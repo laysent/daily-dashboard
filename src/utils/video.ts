@@ -33,14 +33,61 @@ export interface VideoDetails {
   episode: string;
   title: string;
   seasonId: number;
-  id: number;
   episodeNum: number;
+  href: string;
+  source: string;
 }
 
 async function fetchBilibili() {
   const response = await fetch('https://cors.io/?http://bangumi.bilibili.com/web_api/timeline_global');
   const json: BilibiliTimelineResponse = await response.json();
   return json;
+}
+
+export async function getYoukuDetails(id: number, name: string) : Promise<VideoDetails[]> {
+  return new Promise((resolve, reject) => {
+    const script = document.createElement('script');
+    const container = document.createElement('div');
+    container.style.display = 'none';
+    window.youku_callback = (obj) => {
+      if (obj.error) {
+        return reject(obj);
+      }
+      const html = obj.html;
+      container.innerHTML = html;
+      document.body.appendChild(container);
+
+      const videos: Array<VideoDetails> = Array.from(container.querySelectorAll('.p-panels ul li'))
+        .map((li) => {
+          const link = li.querySelector('a');
+          if (!link || !li.firstChild) throw new Error('failed to parse structure');
+          const url = new URL(link.href);
+          const href = url.origin + url.pathname;
+          // const isVIP = !!li.querySelector('.p-icon-vip');
+          const episodeNum = li.firstChild.childNodes[0].textContent || '';
+          const title = link.textContent || '';
+          return {
+            date: 0,
+            href,
+            episode: `#${episodeNum} ${title}`,
+            episodeNum: +episodeNum,
+            title: name,
+            seasonId: id,
+            source: 'Youku',
+          };
+        });
+
+      delete window.youku_callback;
+      document.body.removeChild(container);
+      document.body.removeChild(script);
+
+      resolve(videos);
+    };
+    script.src = `https://list.youku.com/show/module?id=${id}&tab=showInfo&callback=youku_callback`;
+    script.type = 'text/javascript';
+    document.body.appendChild(script);
+  });
+
 }
 
 export async function getBilibiliDetails() {
@@ -65,8 +112,9 @@ export async function getBilibiliDetails() {
           episode,
           title: season.title,
           seasonId: season.season_id,
-          id: season.ep_id,
           episodeNum,
+          href: `https://m.bilibili.com/bangumi/play/ep${season.ep_id}`,
+          source: 'Bilibili',
         };
       })
     )
