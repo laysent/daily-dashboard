@@ -39,7 +39,7 @@ export interface VideoDetails {
 }
 
 async function fetchBilibili() {
-  const response = await fetch('https://cors.io/?http://bangumi.bilibili.com/web_api/timeline_global');
+  const response = await fetch('https://cors-anywhere.herokuapp.com/http://bangumi.bilibili.com/web_api/timeline_global');
   const json: BilibiliTimelineResponse = await response.json();
   return json;
 }
