@@ -85,10 +85,11 @@ class Video extends PureComponent {
     });
   }
   onWatched = () => {
-    const watched: any = JSON.parse(localStorage.getItem('bilibili') || '{}');
     const video = this.state.watchList[this.state.index];
+    const source = video.source.toLowerCase();
+    const watched: any = JSON.parse(localStorage.getItem(source) || '{}');
     watched[video.seasonId] = video.episodeNum;
-    localStorage.setItem('bilibili', JSON.stringify(watched));
+    localStorage.setItem(source, JSON.stringify(watched));
     this.getPendingWatchList();
   }
   componentDidMount() {
