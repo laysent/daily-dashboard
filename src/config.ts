@@ -28,6 +28,11 @@ const config: {
       name: 'CAROLE & TUESDAY',
     },
     {
+      id: 26963,
+      source: 'bilibili',
+      name: '進擊的巨人',
+    },
+    {
       id: 26146,
       name: '多罗罗',
       source: 'bilibili',
@@ -63,13 +68,13 @@ const config: {
       source: 'bilibili',
     },
     {
-      id: 26802,
-      name: '皿三昧',
+      id: 26917,
+      name: 'RobiHachi',
       source: 'bilibili',
     },
     {
-      id: 25615,
-      name: '魔偶马戏团',
+      id: 26802,
+      name: '皿三昧',
       source: 'bilibili',
     },
     {
@@ -80,6 +85,21 @@ const config: {
     {
       id: 26818,
       name: '一个人的〇〇小日子',
+      source: 'bilibili',
+    },
+    {
+      id: 26953,
+      name: '滿腦都是○○的我沒辦法談戀愛',
+      source: 'bilibili',
+    },
+    {
+      id: 25615,
+      name: '魔偶马戏团',
+      source: 'bilibili',
+    },
+    {
+      id: 26777,
+      name: '深夜的超自然公务员',
       source: 'bilibili',
     },
   ],
