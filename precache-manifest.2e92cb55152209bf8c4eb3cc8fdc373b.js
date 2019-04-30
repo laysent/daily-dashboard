@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
+    "revision": "a13a87fb1c32648e5b045192f6ebd4ce",
+    "url": "/daily-dashboard/static/media/bilibili.a13a87fb.svg"
+  },
+  {
     "revision": "8c8444f0818a113d01d2",
     "url": "/daily-dashboard/static/js/config.8c8444f0.chunk.js"
   },
   {
-    "revision": "24b03c91ca81322f9feb",
-    "url": "/daily-dashboard/static/css/main.d19728bb.chunk.css"
+    "revision": "fa2a48dd8457a78066e0",
+    "url": "/daily-dashboard/static/js/main.fa2a48dd.chunk.js"
   },
   {
-    "revision": "24b03c91ca81322f9feb",
-    "url": "/daily-dashboard/static/js/main.24b03c91.chunk.js"
-  },
-  {
-    "revision": "d906c0252ab73ae5e749",
-    "url": "/daily-dashboard/static/js/2.d906c025.chunk.js"
+    "revision": "47e2c3ee1e4355ac72a7055fced69bb7",
+    "url": "/daily-dashboard/static/media/check.47e2c3ee.svg"
   },
   {
     "revision": "1c254e70986db9dde130",
@@ -48,8 +48,8 @@ self.__precacheManifest = [
     "url": "/daily-dashboard/static/media/bus.e574b9b3.svg"
   },
   {
-    "revision": "a13a87fb1c32648e5b045192f6ebd4ce",
-    "url": "/daily-dashboard/static/media/bilibili.a13a87fb.svg"
+    "revision": "064b03a6ff66be9fd4a3fde0c2460fc4",
+    "url": "/daily-dashboard/static/media/right.064b03a6.svg"
   },
   {
     "revision": "f3642dc92ccb27cae92a8431f075b3ad",
@@ -84,15 +84,15 @@ self.__precacheManifest = [
     "url": "/daily-dashboard/static/media/left.4d5ba73f.svg"
   },
   {
-    "revision": "064b03a6ff66be9fd4a3fde0c2460fc4",
-    "url": "/daily-dashboard/static/media/right.064b03a6.svg"
+    "revision": "d906c0252ab73ae5e749",
+    "url": "/daily-dashboard/static/js/2.d906c025.chunk.js"
   },
   {
-    "revision": "47e2c3ee1e4355ac72a7055fced69bb7",
-    "url": "/daily-dashboard/static/media/check.47e2c3ee.svg"
+    "revision": "fa2a48dd8457a78066e0",
+    "url": "/daily-dashboard/static/css/main.d19728bb.chunk.css"
   },
   {
-    "revision": "210719c3d28954511c46621dcb0b0e72",
+    "revision": "c27a2a2d5329206196d8350dd1a352b2",
     "url": "/daily-dashboard/index.html"
   }
 ];
