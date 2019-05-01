@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/daily-dashboard/static/media/bilibili.a13a87fb.svg"
   },
   {
-    "revision": "8c8444f0818a113d01d2",
-    "url": "/daily-dashboard/static/js/config.8c8444f0.chunk.js"
+    "revision": "d65c489f1d8721dc3eaa",
+    "url": "/daily-dashboard/static/js/config.d65c489f.chunk.js"
   },
   {
     "revision": "fa2a48dd8457a78066e0",
@@ -16,8 +16,8 @@ self.__precacheManifest = [
     "url": "/daily-dashboard/static/media/check.47e2c3ee.svg"
   },
   {
-    "revision": "1c254e70986db9dde130",
-    "url": "/daily-dashboard/static/js/runtime~main.1c254e70.js"
+    "revision": "ae99d4acbabf77bfc3c7",
+    "url": "/daily-dashboard/static/js/runtime~main.ae99d4ac.js"
   },
   {
     "revision": "58ebab15e8ad7853362978624c89b722",
@@ -92,7 +92,7 @@ self.__precacheManifest = [
     "url": "/daily-dashboard/static/css/main.d19728bb.chunk.css"
   },
   {
-    "revision": "c27a2a2d5329206196d8350dd1a352b2",
+    "revision": "4704b8a1e5688e409ad7684c1acfa2bf",
     "url": "/daily-dashboard/index.html"
   }
 ];

@@ -1,13 +1,13 @@
 {
-  "config.js": "/daily-dashboard/static/js/config.8c8444f0.chunk.js",
-  "config.js.map": "/daily-dashboard/static/js/config.8c8444f0.chunk.js.map",
+  "config.js": "/daily-dashboard/static/js/config.d65c489f.chunk.js",
+  "config.js.map": "/daily-dashboard/static/js/config.d65c489f.chunk.js.map",
   "main.css": "/daily-dashboard/static/css/main.d19728bb.chunk.css",
   "main.js": "/daily-dashboard/static/js/main.fa2a48dd.chunk.js",
   "main.js.map": "/daily-dashboard/static/js/main.fa2a48dd.chunk.js.map",
   "static/js/2.d906c025.chunk.js": "/daily-dashboard/static/js/2.d906c025.chunk.js",
   "static/js/2.d906c025.chunk.js.map": "/daily-dashboard/static/js/2.d906c025.chunk.js.map",
-  "runtime~main.js": "/daily-dashboard/static/js/runtime~main.1c254e70.js",
-  "runtime~main.js.map": "/daily-dashboard/static/js/runtime~main.1c254e70.js.map",
+  "runtime~main.js": "/daily-dashboard/static/js/runtime~main.ae99d4ac.js",
+  "runtime~main.js.map": "/daily-dashboard/static/js/runtime~main.ae99d4ac.js.map",
   "static/media/left.svg": "/daily-dashboard/static/media/left.4d5ba73f.svg",
   "static/media/thunderstorm.svg": "/daily-dashboard/static/media/thunderstorm.58ebab15.svg",
   "static/media/light-rain.svg": "/daily-dashboard/static/media/light-rain.06661442.svg",
@@ -28,6 +28,6 @@
   "static/media/check.svg": "/daily-dashboard/static/media/check.47e2c3ee.svg",
   "static/css/main.d19728bb.chunk.css.map": "/daily-dashboard/static/css/main.d19728bb.chunk.css.map",
   "index.html": "/daily-dashboard/index.html",
-  "precache-manifest.2e92cb55152209bf8c4eb3cc8fdc373b.js": "/daily-dashboard/precache-manifest.2e92cb55152209bf8c4eb3cc8fdc373b.js",
+  "precache-manifest.88bdb054381b0a632699d82575ba6e85.js": "/daily-dashboard/precache-manifest.88bdb054381b0a632699d82575ba6e85.js",
   "service-worker.js": "/daily-dashboard/service-worker.js"
 }
